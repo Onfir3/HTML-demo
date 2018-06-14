@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>checkbox与radio</title>
+</head>
+<body>
+    <p>checkbox用于多选，但是要把同属一个选项的给予同一个name
+        <br>
+       
+        例：
+    </p>
+    <div>
+    喜欢的水果：
+    <label><input type="checkbox" name="fruit" value="orange">橘子</label>
+    <label><input type="checkbox" name="fruit" value="banana">香蕉</label>
+    
+    </div>
+    <hr>
+    <p>radio用于单选，如果两个radio有一个共同的name的话，就只会有一个被选中
+        <br>
+       
+        例：
+    </p>
+    <div>
+        爱我吗
+        <label><input type="radio" name="loveme" value="yes">YES</label>
+        <label><input type="radio" name="loveme" value="no">NO</label>        
+    </div>
+</body>
+</html>
