@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>select和textarea</title>
+</head>
+<body>
+    <p>select是下拉列表，记住一定要给一个name</p>
+    <div>
+        <select name="group">
+            <option value="">-</option>
+            <option value="1">第一组</option>
+            <option value="2">第二组</option>
+            <option value="3" disabled>第三组</option>
+            <option value="4" selected>第四组</option>
+        </select>
+    </div>
+    <p>空值可以value直接为空<br>
+    默认勾选可以在value后加上selected <br>
+    不让勾选可以在value后加上selected <br>
+    select内加上multiple属性就可以按住ctrl键进行多选 <br>
+    例
+    </p>
+    <div>
+        <select name="group" multiple>
+            <option value="">-</option>
+            <option value="1">第一组</option>
+            <option value="2">第二组</option>
+            <option value="3">第三组</option>
+            <option value="4">第四组</option>
+        </select>
+    </div>
+    <p>如果需要用户选择很多行的东西就需要用到textarea，记住name一定要有</p>
+    <div>
+        <textarea name="xxx" id="" cols="30" rows="10"></textarea>
+    </div>
+    <p>由于它是可以随便拉伸的，可能会造成很多bug，所以一般希望固定它的大小，用CSS固定<br>
+    列cols以及行rows不常用。
+    </p>
+    <div>
+        <textarea style="resize: none;width: 200px;height: 200px;"name="xxx" id=""></textarea>
+    </div>
+</body>
+</html>
