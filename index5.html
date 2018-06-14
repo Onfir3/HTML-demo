@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table</title>
+</head>
+<body>
+    <p>HTML规定table里面只能有三个元素</p>
+    <ul><li>thead</li>
+    <li>tbody</li>
+    <li>tfoot</li></ul>
+    <p>这三个元素里又可以有table row写作tr <br>
+    tr里可以有table data写作td <br>
+    如果是标题就不应该用td而是用th <br>
+    table里可以加一个border <br>
+    thead,tbody,tfoot的摆放位置不影响展示
+    </p>
+    <div>
+        <table border="1">
+            <thead>
+                <tr><th>班级</th><th>姓名</th><th>分数</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>一班</td><td>李雷</td><td>95</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td>二班</td><td>韩梅</td><td>94</td></tr>
+            </tfoot>
+        </table>
+    </div>
+    <p>添加colgroup，colgroup必须要跟col一起用，col主要表示width这一属性</p>
+    <div>
+        <table border="1">
+            <colgroup>
+                <col width=100>
+                <col width=200>
+                <col width=100>
+            </colgroup>
+            <thead>
+                <tr><th>班级</th><th>姓名</th><th>分数</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>一班</td><td>李雷</td><td>95</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td>二班</td><td>韩梅</td><td>94</td></tr>
+            </tfoot>
+        </table>   
+    </div>
+</body>
+</html>
