@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form标签</title>
+</head>
+<body>
+    <p>form标签一般是用于发起POST请求的，如果form表单里没有提交按钮<br>
+        就无法提交这个form，除非使用JS
+    </p>
+    <hr>
+    <p>例如：</p>
+    <form action="user" method="post">
+        <label>用户名<input type="text" name="username"></label>
+        <label>密码<input type="password" name="password"></label>
+        <input type="submit" value="提交">
+    </form>
+    <p>form标签也可以使用target <br>
+    如果一个form里面只有一个按钮，它的type是button，那么它会自动升级为提交按钮。<br>
+    submit是唯一能确定form表单能不能点击提交的按钮。
+    </p>
+</body>
+</html>
